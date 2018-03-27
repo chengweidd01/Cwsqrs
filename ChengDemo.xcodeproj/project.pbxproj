@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2852CE5DE2DECC8FB8BB77B3 /* libPods-ChengDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32CF6830869DC63A2AB885E /* libPods-ChengDemo.a */; };
 		C06AC92D2031728A00A455A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AC92C2031728A00A455A6 /* AppDelegate.swift */; };
 		C06AC92F2031728A00A455A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AC92E2031728A00A455A6 /* ViewController.swift */; };
 		C06AC9322031728A00A455A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06AC9302031728A00A455A6 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9964CC165E00992ED83F6EF0 /* Pods-ChengDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChengDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChengDemo/Pods-ChengDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A32CF6830869DC63A2AB885E /* libPods-ChengDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChengDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55FCA2124CF23C0498B4CDB /* Pods-ChengDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChengDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChengDemo/Pods-ChengDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C06AC9292031728A00A455A6 /* ChengDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChengDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06AC92C2031728A00A455A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06AC92E2031728A00A455A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2852CE5DE2DECC8FB8BB77B3 /* libPods-ChengDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87BB2202C202F576DB2598DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A32CF6830869DC63A2AB885E /* libPods-ChengDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B243BFB5D4DFA47ADC4337FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55FCA2124CF23C0498B4CDB /* Pods-ChengDemo.debug.xcconfig */,
+				9964CC165E00992ED83F6EF0 /* Pods-ChengDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C06AC9202031728A00A455A6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				C06AC9402031728B00A455A6 /* ChengDemoTests */,
 				C06AC94B2031728B00A455A6 /* ChengDemoUITests */,
 				C06AC92A2031728A00A455A6 /* Products */,
+				B243BFB5D4DFA47ADC4337FB /* Pods */,
+				87BB2202C202F576DB2598DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06AC9512031728B00A455A6 /* Build configuration list for PBXNativeTarget "ChengDemo" */;
 			buildPhases = (
+				D3044D4F3A9EA4446C746844 /* [CP] Check Pods Manifest.lock */,
 				C06AC9252031728A00A455A6 /* Sources */,
 				C06AC9262031728A00A455A6 /* Frameworks */,
 				C06AC9272031728A00A455A6 /* Resources */,
+				CF47C3B396E67991C78527D4 /* [CP] Embed Pods Frameworks */,
+				30C7A6A5D05FDF08F59DF834 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30C7A6A5D05FDF08F59DF834 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChengDemo/Pods-ChengDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF47C3B396E67991C78527D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChengDemo/Pods-ChengDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3044D4F3A9EA4446C746844 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChengDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C06AC9252031728A00A455A6 /* Sources */ = {
@@ -424,6 +502,7 @@
 		};
 		C06AC9522031728B00A455A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55FCA2124CF23C0498B4CDB /* Pods-ChengDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +517,7 @@
 		};
 		C06AC9532031728B00A455A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9964CC165E00992ED83F6EF0 /* Pods-ChengDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
